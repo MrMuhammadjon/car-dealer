@@ -336,15 +336,15 @@ main .expoler-premium .expoler-premium-header p {
 }
 main .expoler-premium .expoler-premium-main {
   width: 100%;
-  height: 200px;
+  height: auto;
   padding: 20px;
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
 }
 main .expoler-premium .expoler-premium-main .brands-cards {
   width: 100%;
-  height: 80%;
+  height: 150px;
   flex-direction: column;
   gap: 20px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -564,4 +564,9 @@ main .get-a-fire .get-started {
 }
 main .get-a-fire .get-started:hover {
   background-color: #0056b3;
+}
+@media (max-width: 1200px) {
+  main .expoler-premium .explore-vehicles-main {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }/*# sourceMappingURL=style.css.map */
